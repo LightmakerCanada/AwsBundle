@@ -4,7 +4,6 @@
     "keywords": ["symfony", "symfony2", "bundle", "amazon", "aws"],
     "homepage": "https://github.com/LightmakerCanada/AwsBundle",
     "license": "MIT",
-    "version": "1.0.0",
     "type": "library",
     "authors": [
         {
