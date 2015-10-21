@@ -1,6 +1,7 @@
 services:
+    lightmaker_aws.factory:
+        class: Aws\Common\Aws
     lightmaker_aws:
-        class:          Aws\Common\Aws
-        factory_class:  Aws\Common\Aws
-        factory_method: factory
+        class: Aws\Common\Aws
+        factory: ["@lightmaker_aws.factory", factory]
         arguments: [%lightmaker_aws.config%]
