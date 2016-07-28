@@ -22,8 +22,8 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->scalarNode('key')->isRequired()->end()
-                ->scalarNode('secret')->isRequired()->end()
+                ->scalarNode('key')->end()
+                ->scalarNode('secret')->end()
                 ->scalarNode('region')->defaultValue('us-east-1')->end()
             ->end();
 
